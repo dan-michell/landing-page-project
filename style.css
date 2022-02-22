@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-* {
-    border: 1px solid black;
-}
+/**{border: 1px solid black}*/
 
 body {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: Roboto, sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .hero {
@@ -22,27 +19,59 @@ body {
     justify-content: space-around;
 }
 
-.hero .container-1 {
-    margin: 52px;
+.header-text {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.container-1 {
+    width: 1000px;
+    margin-top: 90px;
+    margin-bottom: 90px;
     display: flex;
-    justify-content: center;
+    align-self: center;
 }
 
 .container-1 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    align-items: flex-start;
+    gap: 15px;
+    margin-right: 80px;
 }
 
-.content .title-1 {
+.title-1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bolder;
 }
 
+.hero-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .container-2 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container {
+    display: flex;
+}
+
+.title-2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.info-text {
+    font-size: 18px;
+    color: #1F2937;
 }
 
 .container-3 {
@@ -67,9 +96,12 @@ body {
 
 a {
     text-decoration: none;
+    color: #E5E7EB;
 }
 
 ul {
+    display: flex;
+    gap: 10px;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -79,7 +111,8 @@ ul {
 .buttons {
     background-color: #3882F6;
     color: white;
-    border: 1px solid white;
-    padding: 5px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
